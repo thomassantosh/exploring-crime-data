@@ -1,0 +1,26 @@
+{
+    "num_workers": 0,
+    "cluster_name": "db-singlenode-cluster",
+    "spark_version": "10.1.x-scala2.12",
+    "spark_conf": {
+        "spark.databricks.cluster.profile": "singleNode",
+        "spark.master": "local[*, 4]"
+    },
+    "azure_attributes": {
+        "first_on_demand": 1,
+        "availability": "ON_DEMAND_AZURE",
+        "spot_bid_max_price": -1
+    },
+    "node_type_id": "Standard_DS3_v2",
+    "driver_node_type_id": "Standard_DS3_v2",
+    "ssh_public_keys": [],
+    "custom_tags": {
+        "ResourceClass": "SingleNode"
+    },
+    "spark_env_vars": {},
+    "autotermination_minutes": 60,
+    "enable_elastic_disk": true,
+    "cluster_source": "UI",
+    "init_scripts": [],
+    "cluster_id": "1208-002216-ck3fph9w"
+}
